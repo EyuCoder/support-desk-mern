@@ -53,7 +53,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
 /**
  * @desc    Login a User
- * @route   /api/users/login
+ * @route   POST /api/users/login
  * @access  public
  */
 const loginUser = asyncHandler(async (req, res) => {
@@ -77,7 +77,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
 /**
  * @desc    Get current user
- * @route   /api/users/me
+ * @route   GET /api/users/me
  * @access  private
  */
 const getMe = asyncHandler(async (req, res) => {
